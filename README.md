@@ -156,10 +156,3 @@ streamlit run src/dashboard.py    # → http://localhost:8501
 | `data/final/sensitivity_report.csv` | Чувствительность ±20% весов |
 | `models/lsi_model.pkl` | Обученная RandomForest |
 
-## Ограничения
-
-- Минфин (minfin.gov.ru) возвращает 503 — ОФЗ работают на синтетических данных
-- ФНС (nalog.gov.ru) не отдаёт таблицу — календарь синтетический
-- Росказна (roskazna.gov.ru) отдаёт только имена файлов, не суммы депозитов — proxy через `num_placements`
-- Качество ML LSI зависит от разметки стрессовых периодов
-- Структура HTML источников может меняться
